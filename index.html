@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FELIX (FEL) - 基于 Tron 区块链的 TRC20 代币">
+    <meta name="keywords" content="FELIX, FEL, TRC20, Tron, 代币, 区块链">
+    <title>FELIX (FEL) - Tron TRC20 Token</title>
+    <link rel="icon" type="image/png" href="assets/flix-tron.png">
+    <link rel="apple-touch-icon" href="assets/flix-tron.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="assets/flix-tron.png" alt="FELIX Logo" class="logo-image">
+                    <span class="logo-text">FELIX</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">关于</a></li>
+                    <li><a href="#token">代币信息</a></li>
+                    <li><a href="#contract">合约详情</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="菜单">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🚀</span>
+                    <span>基于 Tron 区块链</span>
+                </div>
+                <div class="hero-logo-container">
+                    <img src="assets/flix-tron.png" alt="FELIX Logo" class="hero-logo">
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">FELIX</span>
+                    <span class="hero-subtitle">下一代 TRC20 代币</span>
+                </h1>
+                <p class="hero-description">
+                    FELIX (FEL) 是一个基于 Tron 区块链的标准 TRC20 代币，
+                    致力于为去中心化金融生态系统提供安全、高效的代币解决方案。
+                </p>
+                <div class="hero-actions">
+                    <a href="#token" class="btn btn-primary">查看代币信息</a>
+                    <a href="https://tronscan.org/#/token20/THVkPgsvFmPticv9Qh63LYNRbSJLDZJq4T" target="_blank" class="btn btn-secondary" rel="noopener noreferrer">
+                        查看 TronScan
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 3L13 10M13 10V3M13 10H6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">1,000</div>
+                        <div class="stat-label">总供应量</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">TRC20</div>
+                        <div class="stat-label">代币标准</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">6</div>
+                        <div class="stat-label">小数位数</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">关于 FELIX</h2>
+                <p class="section-subtitle">了解我们的项目愿景和技术优势</p>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="card-icon">🔒</div>
+                    <h3>安全可靠</h3>
+                    <p>智能合约已通过验证，代码开源透明，符合标准 TRC20 规范，确保资金安全。</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>高效快速</h3>
+                    <p>基于 Tron 区块链，享受低手续费和高交易速度，为用户提供流畅的使用体验。</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🌐</div>
+                    <h3>生态兼容</h3>
+                    <p>完全兼容 Tron 生态系统，支持所有主流钱包和去中心化交易所。</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">📈</div>
+                    <h3>持续发展</h3>
+                    <p>团队致力于项目长期发展，不断优化和完善代币功能，构建繁荣的社区生态。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Token Info Section -->
+    <section id="token" class="token-info">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">代币信息</h2>
+                <p class="section-subtitle">FELIX (FEL) 的完整技术规格</p>
+            </div>
+            <div class="token-grid">
+                <div class="token-card main-card">
+                    <div class="card-header">
+                        <h3>基本信息</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="info-row">
+                            <span class="info-label">代币名称</span>
+                            <span class="info-value">FELIX</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">代币符号</span>
+                            <span class="info-value">FEL</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">总供应量</span>
+                            <span class="info-value">1,000 FEL</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">小数位数</span>
+                            <span class="info-value">6</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">代币标准</span>
+                            <span class="info-value badge-trc20">TRC20</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">区块链网络</span>
+                            <span class="info-value">Tron Mainnet</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="token-card">
+                    <div class="card-header">
+                        <h3>合约与发行者信息</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="address-section">
+                            <div class="address-label">合约地址</div>
+                            <div class="address-container">
+                                <code class="contract-address" id="contractAddress">THVkPgsvFmPticv9Qh63LYNRbSJLDZJq4T</code>
+                                <button class="copy-btn" data-copy="THVkPgsvFmPticv9Qh63LYNRbSJLDZJq4T" aria-label="复制合约地址">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M5.5 4.5H3.5C2.67157 4.5 2 5.17157 2 6V12.5C2 13.3284 2.67157 14 3.5 14H10C10.8284 14 11.5 13.3284 11.5 12.5V10.5M5.5 4.5C5.5 3.67157 6.17157 3 7 3H10.5C11.3284 3 12 3.67157 12 4.5V8C12 8.82843 11.3284 9.5 10.5 9.5H7C6.17157 9.5 5.5 8.82843 5.5 8V4.5Z" stroke="currentColor" stroke-width="1.5"/>
+                                    </svg>
+                                    <span class="copy-text">复制</span>
+                                </button>
+                            </div>
+                            <div class="address-links">
+                                <a href="https://tronscan.org/#/token20/THVkPgsvFmPticv9Qh63LYNRbSJLDZJq4T" target="_blank" class="link-btn" rel="noopener noreferrer">
+                                    在 TronScan 查看
+                                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                                        <path d="M6 3L13 10M13 10V3M13 10H6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="address-divider"></div>
+                        <div class="address-section">
+                            <div class="address-label">发行者地址</div>
+                            <div class="address-container">
+                                <code class="contract-address">TJszDjSsdih8tYnCSfVv3BFkNvBZaHyKAM</code>
+                                <button class="copy-btn" data-copy="TJszDjSsdih8tYnCSfVv3BFkNvBZaHyKAM" aria-label="复制发行者地址">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M5.5 4.5H3.5C2.67157 4.5 2 5.17157 2 6V12.5C2 13.3284 2.67157 14 3.5 14H10C10.8284 14 11.5 13.3284 11.5 12.5V10.5M5.5 4.5C5.5 3.67157 6.17157 3 7 3H10.5C11.3284 3 12 3.67157 12 4.5V8C12 8.82843 11.3284 9.5 10.5 9.5H7C6.17157 9.5 5.5 8.82843 5.5 8V4.5Z" stroke="currentColor" stroke-width="1.5"/>
+                                    </svg>
+                                    <span class="copy-text">复制</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contract Details Section -->
+    <section id="contract" class="contract-details">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">合约详情</h2>
+                <p class="section-subtitle">智能合约技术规格和验证信息</p>
+            </div>
+            <div class="contract-grid">
+                <div class="contract-card">
+                    <div class="contract-icon">✅</div>
+                    <h3>合约验证状态</h3>
+                    <p class="status-badge verified">已验证</p>
+                    <p>合约代码已在 TronScan 完成验证，代码开源透明</p>
+                </div>
+                <div class="contract-card">
+                    <div class="contract-icon">📜</div>
+                    <h3>合约名称</h3>
+                    <p class="code-text">MyToken</p>
+                    <p>Solidity 智能合约</p>
+                </div>
+                <div class="contract-card">
+                    <div class="contract-icon">⚙️</div>
+                    <h3>编译器版本</h3>
+                    <p class="code-text">Solidity 0.8.25</p>
+                    <p>使用最新稳定版本编译器</p>
+                </div>
+                <div class="contract-card">
+                    <div class="contract-icon">🔧</div>
+                    <h3>优化设置</h3>
+                    <p class="code-text">Deactivated</p>
+                    <p>未启用编译器优化</p>
+                </div>
+                <div class="contract-card">
+                    <div class="contract-icon">📋</div>
+                    <h3>许可证</h3>
+                    <p class="code-text">MIT License</p>
+                    <p>开源许可证</p>
+                </div>
+                <div class="contract-card">
+                    <div class="contract-icon">⛽</div>
+                    <h3>Gas Limit</h3>
+                    <p class="code-text">60,000</p>
+                    <p>代币转账默认 Gas 限制</p>
+                </div>
+            </div>
+            <div class="contract-features">
+                <h3>合约功能</h3>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>标准 transfer() 转账功能</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>approve() 授权功能</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>transferFrom() 代理转账功能</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>balanceOf() 余额查询</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>allowance() 授权额度查询</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Transfer 和 Approval 事件</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Coverage Section -->
+    <section id="media" class="media-coverage">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">媒体报道</h2>
+                <p class="section-subtitle">关注 FELIX 的最新动态和新闻</p>
+            </div>
+            <div class="media-grid">
+                <div class="media-card placeholder">
+                    <div class="media-icon">📰</div>
+                    <h3>媒体报道</h3>
+                    <p>更多媒体报道即将发布，敬请关注</p>
+                </div>
+                <div class="media-card placeholder">
+                    <div class="media-icon">🎯</div>
+                    <h3>合作伙伴</h3>
+                    <p>合作伙伴信息即将更新</p>
+                </div>
+                <div class="media-card placeholder">
+                    <div class="media-icon">🏆</div>
+                    <h3>交易所上架</h3>
+                    <p>交易所上架信息即将公布</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">联系我们</h2>
+                <p class="section-subtitle">有任何问题或建议，欢迎与我们联系</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>邮箱联系</h3>
+                    <a href="mailto:Felix@yuexiang.onmicrosoft.com" class="contact-link">
+                        Felix@yuexiang.onmicrosoft.com
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🔗</div>
+                    <h3>区块链浏览器</h3>
+                    <a href="https://tronscan.org/#/token20/THVkPgsvFmPticv9Qh63LYNRbSJLDZJq4T" target="_blank" class="contact-link" rel="noopener noreferrer">
+                        在 TronScan 查看合约
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3>社区</h3>
+                    <p class="contact-note">社区渠道即将开放，敬请期待</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/flix-tron.png" alt="FELIX Logo" class="footer-logo-image">
+                        <span class="logo-text">FELIX</span>
+                    </div>
+                    <p class="footer-description">
+                        FELIX (FEL) 是基于 Tron 区块链的标准 TRC20 代币，
+                        致力于为去中心化金融生态系统提供安全、高效的代币解决方案。
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#about">关于</a></li>
+                        <li><a href="#token">代币信息</a></li>
+                        <li><a href="#contract">合约详情</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>资源</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://tronscan.org/#/token20/THVkPgsvFmPticv9Qh63LYNRbSJLDZJq4T" target="_blank" rel="noopener noreferrer">TronScan</a></li>
+                        <li><a href="https://www.tronlink.org/" target="_blank" rel="noopener noreferrer">TronLink</a></li>
+                        <li><a href="https://tron.network/" target="_blank" rel="noopener noreferrer">Tron Network</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系信息</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:Felix@yuexiang.onmicrosoft.com">邮箱</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FELIX (FEL). All rights reserved.</p>
+                <p class="footer-disclaimer">
+                    ⚠️ 风险提示：加密货币投资存在风险，请谨慎投资，DYOR（Do Your Own Research）。
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
